@@ -15,7 +15,7 @@ app.use(morgan("tiny"))
 const port = process.env.PORT || 5000
 
 app.get("/", function(request, response){
-    response.status.json({ message: "Api working fine."})
+    response.status(200).json({ message: "Api working fine."})
 })
 app.use(routes)
 
