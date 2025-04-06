@@ -1,4 +1,4 @@
-import express from "express"
+import express, { response } from "express"
 import morgan from "morgan"
 import cors from "cors"
 import dotenv from "dotenv/config"
@@ -14,6 +14,9 @@ app.use(morgan("tiny"))
 
 const port = process.env.PORT || 5000
 
+app.get("/", function(request, response){
+    response.status.json({ message: "Api working fine."})
+})
 app.use(routes)
 
 app.use(errorHandler)
