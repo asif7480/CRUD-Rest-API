@@ -1,1 +1,6 @@
+railway deploy url:
 https://feedbacks-api-production-6ec.up.railway.app/api/v1/feedback
+
+
+vercel deploy url:
+https://crud-rest-api-mauve.vercel.app/api/v1/feedback
